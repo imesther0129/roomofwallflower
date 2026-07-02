@@ -238,6 +238,16 @@ h2 {
   text-transform: uppercase;
 }
 
+.collection-title span {
+  display: inline-block;
+  margin-left: 0.35em;
+  font-family: var(--serif-tc);
+  font-size: 0.72em;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+
 .product-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
