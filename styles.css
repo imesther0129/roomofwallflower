@@ -248,6 +248,29 @@ h2 {
   text-transform: none;
 }
 
+.collection-subgroup + .collection-subgroup {
+  margin-top: clamp(38px, 6vw, 64px);
+}
+
+.collection-subgroup h4 {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-family: var(--serif-en);
+  font-size: clamp(1rem, 2vw, 1.18rem);
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.collection-subgroup h4 span {
+  margin-left: 0.4em;
+  font-family: var(--serif-tc);
+  font-size: 0.88em;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+
 .product-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -444,6 +467,14 @@ h3 {
   }
 
   .product-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .flower-grid--metal {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .flower-grid--resin {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
