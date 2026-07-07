@@ -287,6 +287,7 @@ h2 {
   aspect-ratio: 1 / 1.08;
   object-fit: cover;
   background: var(--soft);
+  transition: transform 420ms ease, filter 420ms ease;
 }
 
 .product-card div {
@@ -368,6 +369,22 @@ h3 {
   min-height: 180px;
   aspect-ratio: 3 / 4;
   object-fit: cover;
+  transition: transform 420ms ease, filter 420ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .product-card:hover img,
+  .gallery-grid img:hover {
+    filter: brightness(1.02);
+    transform: scale(1.025);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .product-card img,
+  .gallery-grid img {
+    transition: none;
+  }
 }
 
 .notice-order {
