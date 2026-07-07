@@ -372,12 +372,11 @@ h3 {
   transition: transform 420ms ease, filter 420ms ease;
 }
 
-@media (hover: hover) and (pointer: fine) {
-  .product-card:hover img,
-  .gallery-grid img:hover {
-    filter: brightness(1.02);
-    transform: scale(1.025);
-  }
+.product-card:hover img,
+.product-card img:hover,
+.gallery-grid img:hover {
+  filter: brightness(1.03);
+  transform: scale(1.06);
 }
 
 @media (prefers-reduced-motion: reduce) {
