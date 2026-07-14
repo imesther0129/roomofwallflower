@@ -271,6 +271,39 @@ h2 {
   text-transform: none;
 }
 
+.subgroup-note {
+  max-width: 720px;
+  margin: 0 0 clamp(22px, 4vw, 34px);
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.8;
+}
+
+.subgroup-note p {
+  margin: 0 0 8px;
+}
+
+.subgroup-note ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.subgroup-note li {
+  color: #8d8781;
+  font-size: 0.84rem;
+  letter-spacing: 0.06em;
+}
+
+.subgroup-note li::before {
+  content: "/";
+  margin-right: 8px;
+  color: var(--rose);
+}
+
 .product-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -463,6 +496,15 @@ h3 {
   font-family: var(--serif-en);
   font-size: 0.88rem;
   letter-spacing: 0.18em;
+}
+
+.site-footer small {
+  display: block;
+  margin-top: 18px;
+  color: #9a968f;
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
 }
 
 @media (min-width: 720px) {
